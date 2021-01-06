@@ -1,10 +1,10 @@
 <?php
 class ControllerExtensionPaymentShurjopay4 extends Controller {
 
-	const SHURJOPAY_LIVE_URL = 'https://xxxxx.com/x.php';
-	const SHURJOPAY_DECRYPT_LIVE_URL = 'https://xxxx.com/xxx/x.php';
-    const SHURJOPAY_SANDBOX_URL = 'https://xxxx.com/xx.php';
-    const SHURJOPAY_DECRYPT_SANDBOX_URL = 'https://xxx.com/xx/x.php';
+    const SHURJOPAY_LIVE_URL = 'https://shurjopay.com/sp-data.php';
+    const SHURJOPAY_DECRYPT_LIVE_URL = 'https://shurjopay.com/merchant/decrypt.php';
+    const SHURJOPAY_SANDBOX_URL = 'https://shurjotest.com/sp-data.php';
+    const SHURJOPAY_DECRYPT_SANDBOX_URL = 'https://shurjotest.com/merchant/decrypt.php';
 
 	public function index() {
 		$this->load->model('checkout/order');
